@@ -1,0 +1,30 @@
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:black;
+    background-image: url();
+    color:white ;
+}
+h1{
+    color: rgb(85, 31, 31);
+}
+h2{
+    color: rgb(128, 51, 0);
+}
+div{
+    background-color: white;
+    color: purple;
+    padding: 10px;
+    margin: 10px;
+}
+button{
+    background:orange ;
+    padding: 10px;
+}
+button:hover
+{
+   color:red;
+}
+.nav{
+    color: antiquewhite;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>theme changer</title>
+</head>
+<style>
+    body{
+        text-align:center;
+        font-family:Arial;
+    }
+    button{
+        padding:10px;
+        margin:5px;
+    }
+</style>
+</head>
+<body>
+    <h2> theme changer</h2>
+    <button onclick="light()">Light Theme</button>
+    <button onclick="dark()">Dark Theme</button>
+    <button onclick="blue()">Blue Theme</button>
+    <script>
+    function light()
+    {   
+    document.body.style.background="white";
+    document.body.style.color="black";
+    }
+    function dark()
+    {   
+    document.body.style.background="black";
+    document.body.style.color="white";
+    }
+    function blue()
+    {   
+    document.body.style.background="skyblue";
+    document.body.style.color="darkblue";
+    }
+    </script>
+</body>
+</html>

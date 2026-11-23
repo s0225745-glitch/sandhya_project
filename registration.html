@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <script>
+        function validationForm(){
+            let name=
+        document.getElementByld("name").value;
+            let email=
+        document.getElementByld("email").value;
+            let mobile=
+        document.getElementByld("mobile").value;
+            let password=
+        document.getElementByld("password").value;
+            let onfirmPassword=document.getElementByld("confirmPassword").value;
+            if(name ==''''||email ==""||mobile =""||password ==""||confirmPassword ==""){
+                alert("All fields are mandatory.");
+                return false;
+            }
+            let emailPattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if(!emailPattern=.test(email)) {
+                alert("Enter a valid email address.");
+                return false;
+            }
+            let mobilePattern=/^[0-9]{10}$/;
+            if(!mobilePattern.test?(mobile)) {
+                alert("Mobile number must contain exactly 10 digits.");
+                retrun false;
+            }
+            if(Password !==confirmPassword){
+                alert("Password do not match.");
+                retrun false;
+            }
+            alert("Registration Successful!");
+            retrun true;
+
+    
+        }
+    </script>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form onsubmit="return validateForm()">
+        <label>Name:</label><br>
+        <input type="type" id="name"><br><br>
+
+        <label>Email:</label><br>
+        <input type="text" id="email"><br><br>
+
+        <label>Mobile Number:</label><br><br>
+        <input type="text" id="mobile"><br><br>
+
+        <label>Password:</label><br>
+        <input type="Password" id="password"><br><br>
+
+        <label>Confirm Password:</label><br>
+        <input type="password" id="confirmPassword"><br><br>
+
+        <input type="submit" value="Register">
+        </form>
+    
+</body>
+</html>
