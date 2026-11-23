@@ -1,7 +1,7 @@
 # Simple ATM Balance Checking System
 
-correct_pin = "1234"
-balance = 25000.0
+correct_pin = 2346
+balance = 25000.00
 
 pin = input("Enter your 4-digit ATM PIN: ")
 
